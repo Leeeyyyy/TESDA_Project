@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="/frontend/css/dashboard.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <div class="topbar">
+        <div>
+            <h1>Dashboard</h1>
+            <p id="welcomeUser"></p>
+        </div>
+
+        <button id="logoutBtn" class="logout-btn">
+            Logout
+        </button>
+    </div>
+
+    <div class="balance-card">
+        <h3>Current Balance</h3>
+        <div id="balance">₱0.00</div>
+        <small id="accountId"></small>
+    </div>
+
+    <div class="forms-grid">
+
+        <div class="card">
+            <h2>Cash In</h2>
+
+            <input
+                type="number"
+                id="cashInAmount"
+                placeholder="Enter amount">
+
+            <button
+                id="cashInBtn"
+                class="action-btn">
+                Add Funds
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>Transfer Money</h2>
+
+            <input
+                type="email"
+                id="receiverEmail"
+                placeholder="Receiver Email">
+
+            <input
+                type="number"
+                id="transferAmount"
+                placeholder="Amount">
+
+            <button
+                id="transferBtn"
+                class="action-btn">
+                Transfer
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>Change PIN</h2>
+
+            <input
+                type="password"
+                id="oldPin"
+                placeholder="Current PIN">
+
+            <input
+                type="password"
+                id="newPin"
+                placeholder="New PIN">
+
+            <button
+                id="changePinBtn"
+                class="action-btn">
+                Update PIN
+            </button>
+        </div>
+
+    </div>
+
+    <div class="transactions">
+        <h2>Transaction History</h2>
+
+        <div id="transactionList"></div>
+    </div>
+
+</div>
+
+<script src="/frontend/js/dashboard.js"></script>
+
+</body>
+</html>

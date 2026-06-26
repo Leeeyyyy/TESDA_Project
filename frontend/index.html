@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Wallet - Login</title>
+
+    <link rel="stylesheet" href="/frontend/css/login.css">
+</head>
+<body>
+
+    <div class="login-container">
+
+        <div class="card">
+
+            <h1>Digital Wallet</h1>
+            <p class="subtitle">
+                Secure Banking Dashboard
+            </p>
+
+            <div id="message"></div>
+
+            <form id="loginForm">
+
+                <div class="form-group">
+                    <label>Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter Email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label>PIN</label>
+
+                    <input
+                        type="password"
+                        id="pin"
+                        maxlength="4"
+                        placeholder="Enter PIN"
+                        required>
+                </div>
+
+                <button type="submit" class="btn">
+                    Login
+                </button>
+
+            </form>
+
+            <div class="register-link">
+                <p>
+                    Don't have an account?
+                </p>
+
+                <a href="register.html">
+                    Create Account
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/frontend/js/auth.js"></script>
+
+</body>
+</html>
